@@ -2,6 +2,7 @@
 const t_book = document.querySelector('.t_book');
 const t_author = document.querySelector('.t_author');
 const t_id = document.querySelector('.t_id');
+const t_read = document.querySelector('.t_read');
 const bott = document.querySelector('button');
 const info = document.querySelector('#proprty');
 const book = document.querySelector('.addBook');
@@ -80,6 +81,17 @@ const addBook = () => {
         create_delete.classList.add('bookStyle' ,`item_${i}`);
         // append to parent
          createt_id.appendChild(create_delete);
+
+        // create element
+        const createt_read = document.createElement('div');
+        // add value of field to new elemnet
+        if(document.querySelector('.yes').checked == true){
+            createt_read.innerHTML = "Yes";
+        }else createt_read.innerHTML = "No";
+        // add style by add class attribuete
+        createt_read.classList.add('bookStyle' ,`item_${i}`);
+        // append to parent
+        t_read.appendChild(createt_read);
         
         clear(); 
         
@@ -87,7 +99,6 @@ const addBook = () => {
         info.style.cssText = "visibility: hidden "
     }
 }
-
 // display the book field
 const showProperty = () => {
     const idcontent = document.querySelector('.disid').value = count();

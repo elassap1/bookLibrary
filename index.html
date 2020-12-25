@@ -15,9 +15,10 @@
         <div id="library">
             <div id="title"><h1>Library Books</h1></div>
             <div id="table">
-                <div class="t_id"> Book id</div>
+                <div class="t_id"> Book pages</div>
                 <div class="t_author"> Book author</div>
                 <div class="t_book"> Book Name</div>
+                <div class="t_read"> Read </div>
             </div>
         </div>
         <div id="proprty">
@@ -34,9 +35,26 @@
                 <input type="text" class="input author">
             </div>
             <div>
-                <label for="id">Book id</label>
-                <input type="" class="input disid" disabled>
+                <label for="number">Book pages</label>
+                <input type="number" class="input disid" >
             </div>
+            <div>
+                <label for="Read">Read</label>
+                <div>
+                    <div>
+                        <label for="Read">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="read" class="yes" checked>
+                    </div>
+                    <div>
+                        <label for="Read">No</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="read" class="no">
+                    </div>
+                </div>
+                </div>
             <div>
                 <button class="addBook">Add Book</button>
                 <button class="clear">clear</button>

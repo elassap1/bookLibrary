@@ -76,8 +76,8 @@ body {
 #contenaire #library #table {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (fr)[3];
-      grid-template-columns: repeat(3, fr);
+  -ms-grid-columns: (fr)[4];
+      grid-template-columns: repeat(4, fr);
   text-align: center;
   padding: 5px;
   color: bisque;
@@ -104,6 +104,13 @@ body {
   margin: 10px;
 }
 
+#contenaire #library #table :nth-child(4) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  margin: 10px;
+}
+
 #contenaire #library .bookStyle {
   font-size: 1.5rem;
   color: #e6e209;
@@ -112,7 +119,6 @@ body {
 
 #contenaire #proprty {
   position: absolute;
-  visibility: hidden;
   width: 50vh;
   margin: 30% 0% 0% 10%;
   border: 2px solid #956e34;
@@ -155,16 +161,48 @@ body {
 }
 
 #contenaire #proprty div :nth-child(2) {
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  grid-column: 1/2;
 }
 
 #contenaire #proprty :nth-child(1) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  text-align: center;
+}
+
+#contenaire #proprty :nth-child(5) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (fr)[4];
+      grid-template-columns: repeat(4, fr);
+}
+
+#contenaire #proprty :nth-child(5) :nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 70%;
+  height: 40px;
+}
+
+#contenaire #proprty :nth-child(5) :nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+#contenaire #proprty :nth-child(5) :nth-child(3) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+#contenaire #proprty :nth-child(5) :nth-child(4) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
 }
 
 #contenaire #proprty .delete {
