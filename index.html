@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenaire">
+        <div class="title">Add Book To Your Library </div>
+
+        <div id="add"><button>New Book</button></div>
+
+        <div id="library">
+            <div id="title"><h1>Library Books</h1></div>
+            <div id="table">
+                <div class="t_id"> Book id</div>
+                <div class="t_author"> Book author</div>
+                <div class="t_book"> Book Name</div>
+            </div>
+        </div>
+        <div id="proprty">
+            <div class="relative">
+                <div>Book Information</div>
+                <div class="delete"><button>X</button></div>
+            </div>
+            <div>
+                <label for="book">Book Name</label>
+                <input type="text"class="input book">
+            </div>
+            <div>
+                <label for="author">author Name</label>
+                <input type="text" class="input author">
+            </div>
+            <div>
+                <label for="id">Book id</label>
+                <input type="" class="input disid" disabled>
+            </div>
+            <div>
+                <button class="addBook">Add Book</button>
+                <button class="clear">clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
